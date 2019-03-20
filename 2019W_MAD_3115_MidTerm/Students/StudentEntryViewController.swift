@@ -12,6 +12,14 @@ class StudentEntryViewController: UIViewController,UIPickerViewDelegate,UIPicker
     
     
     
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 2
+    }
+    
+    
+    
+    
     @IBOutlet weak var sid: UITextField!
     
     
@@ -81,10 +89,7 @@ class StudentEntryViewController: UIViewController,UIPickerViewDelegate,UIPicker
         
         
         
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-            
-            return 2
-        }
+    
         
         
     }
@@ -112,8 +117,8 @@ class StudentEntryViewController: UIViewController,UIPickerViewDelegate,UIPicker
     @IBAction func cal(_ sender: Any) {
         
         let sb = UIStoryboard(name: "Main", bundle: nil)
-        let homevc = sb.instantiateViewController(withIdentifier: "studentresul") as! StudentResultViewController
-        homevc.sid = sid.text
+        let homevc = sb.instantiateViewController(withIdentifier: "studentresult") as! StudentResultViewController
+       homevc.sid = sid.text
         homevc.sname = txtsname.text
         homevc.gender2 = gender
         homevc.course1 = course
@@ -125,7 +130,7 @@ class StudentEntryViewController: UIViewController,UIPickerViewDelegate,UIPicker
         homevc.m4 = Int(m4.text!)
         homevc.m5 = Int(m5.text!)
         
-        self.navigationController?.pushViewController(homevc, animated: true)
+       self.navigationController?.pushViewController(homevc, animated: true)
         
         
 
