@@ -40,6 +40,7 @@ class StudentResultViewController: UIViewController {
     @IBOutlet weak var marks3: UILabel!
     
     
+    @IBOutlet weak var marks5: UILabel!
     
     @IBOutlet weak var marks4: UILabel!
     
@@ -59,6 +60,179 @@ class StudentResultViewController: UIViewController {
     var course1 : String?
     var email1 : String?
     var m1,m2,m3,m4,m5 : Int?
+    
+    var total1 : Float?
+    var percentage : Float?
+    var grade2 : String?
+    
+    
+    
+    func grade()
+    {
+        if(Int(percentage!) >= 95)
+        {
+            grade2 = "A+"
+            grade1.text = grade2
+            print(grade2)
+            grade1.textColor = UIColor.green
+       
+        
+        }
+       else if(Int(percentage!) >= 85)
+        {
+            grade2 = "A"
+            grade1.text = grade2
+            print(grade2)
+            grade1.textColor = UIColor.green
+            
+        }
+        
+       else if(Int(percentage!) >= 75)
+        {
+            grade2 = "B+"
+            grade1.text = grade2
+            print(grade2)
+            grade1.textColor = UIColor.green
+            
+        }
+        
+      else  if(Int(percentage!) >= 65)
+        {
+            grade2 = "B"
+            grade1.text = grade2
+            print(grade2)
+            grade1.textColor = UIColor.green
+            
+        }
+        
+      else  if(Int(percentage!) >= 55)
+        {
+            grade2 = "c+"
+            grade1.text = grade2
+            print(grade2)
+            grade1.textColor = UIColor.green
+            
+        }
+        
+      else  if(Int(percentage!) >= 50)
+        {
+            grade2 = "c"
+            grade1.text = grade2
+            print(grade2)
+            grade1.textColor = UIColor.green
+        }
+        
+        else
+        {
+            grade2 = "F"
+            grade1.text = grade2
+            print(grade2)
+            grade1.textColor = UIColor.red
+            
+        }
+        
+        
+       func displaydata()
+        
+       {
+        
+        if let e1 = sid
+        {
+        txtsid.text = e1
+        }
+        
+        if let e2 = sname
+        {
+            
+            studentname.text = e2
+        }
+        
+        if let e3 =  gender2
+        {
+            
+            gender.text = e3
+        }
+        
+        if let e4 =  bdate1
+        {
+        
+        birthdate.text = e4
+        
+        }
+        
+        if let e5 =  course1
+        {
+            course.text = e5
+        }
+        
+        if let e6 =  email1
+        {
+            email.text = e6
+        }
+        
+        if let  e7 = m1
+        {
+            marks1.text = String(e7)
+        }
+        
+        if let e8 = m2
+        
+        {
+            
+            marks2.text = String(e8)
+        }
+        
+        if let e9 = m3
+        
+        {
+            
+            marks3.text = String(e9)
+        }
+        
+        if let e10 = m4
+        
+        {
+            
+            marks4.text = String(e10)
+        }
+        
+        if let e11 = m5
+        
+        {
+            
+            marks5.text = String(e11)
+        }
+        
+        total1 = Float(m1!+m2!+m3!+m4!+m5!)
+        print(total1)
+        
+        percentage = total1!/5
+        
+        grade1.text = grade2
+        total.text = String(total1!)
+        per.text = String(percentage!)
+        
+        
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+    
     
     
     
