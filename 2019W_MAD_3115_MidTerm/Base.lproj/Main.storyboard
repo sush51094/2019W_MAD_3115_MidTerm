@@ -347,7 +347,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="course" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WA7-xd-C5L">
-                                <rect key="frame" x="161" y="215" width="53" height="79"/>
+                                <rect key="frame" x="157" y="244" width="53" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -359,8 +359,8 @@
                     </view>
                     <connections>
                         <outlet property="birthdate" destination="XaC-Ev-leg" id="uw3-Mh-Xdr"/>
-                        <outlet property="course" destination="WA7-xd-C5L" id="UJT-ly-fY8"/>
-                        <outlet property="email" destination="K5d-10-aC6" id="F4v-CA-QUA"/>
+                        <outlet property="course" destination="WA7-xd-C5L" id="hG4-vO-sgi"/>
+                        <outlet property="email" destination="K5d-10-aC6" id="uHU-ZT-1Wd"/>
                         <outlet property="gender" destination="2yY-oK-G6a" id="ypz-ZQ-iUT"/>
                         <outlet property="grade1" destination="3mZ-ja-htO" id="tlQ-hK-3Xh"/>
                         <outlet property="marks1" destination="rsT-jT-5ag" id="5tQ-kg-JMo"/>

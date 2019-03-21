@@ -62,14 +62,14 @@ class StudentResultViewController: UIViewController {
     var m1,m2,m3,m4,m5 : Int?
     
     var total1 : Float?
-    var percentage : Float?
+    var percentage : Float!
     var grade2 : String?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-     // grade()
+               // grade()
         
         displaydata()
         
@@ -77,10 +77,11 @@ class StudentResultViewController: UIViewController {
     }
     
     
-    func grade()
+    /*
+     func grade()
+    
     {
-       
-        if(Int(percentage!) >= 95)
+        if Int(percentage!) >= 95
             
         {
             grade2 = "A+"
@@ -89,16 +90,21 @@ class StudentResultViewController: UIViewController {
          grade1.textColor = UIColor.green
        
         
-        }
-      /* else if(Int(percentage!) >= 85)
+       }
+            
+            
+       else if Int(percentage!) >= 85
+            
         {
             grade2 = "A"
             grade1.text = grade2
             grade1.textColor = UIColor.green
             
         }
+            
         
-       else if(Int(percentage!) >= 75)
+       else if Int(percentage!) >= 75
+            
         {
             grade2 = "B+"
             grade1.text = grade2
@@ -106,7 +112,7 @@ class StudentResultViewController: UIViewController {
             
         }
         
-      else if(Int(percentage!) >= 65)
+      else if Int(percentage!) >= 65
         {
             grade2 = "B"
            grade1.text = grade2
@@ -114,7 +120,7 @@ class StudentResultViewController: UIViewController {
             
         }
         
-      else if(Int(percentage!) >= 55)
+      else if Int(percentage!) >= 55
         {
             grade2 = "c+"
             grade1.text = grade2
@@ -122,13 +128,15 @@ class StudentResultViewController: UIViewController {
             
         }
         
-      else if(Int(percentage!) >= 50)
+      else if Int(percentage!) >= 50
+            
         {
             grade2 = "c"
            grade1.text = grade2
             grade1.textColor = UIColor.green
         }
         
+ 
         else
         {
             grade2 = "F"
@@ -136,12 +144,14 @@ class StudentResultViewController: UIViewController {
             grade1.textColor = UIColor.red
             
         }
-   */
+ 
      
-     }
-        
-        
      */
+    
+
+        
+        
+    
     func displaydata()
         
        {
