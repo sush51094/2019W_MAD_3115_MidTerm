@@ -51,8 +51,8 @@ class LoginViewController: UIViewController {
         {
             
             
-let Alert = UIAlertController(title: nil, message: "OK", preferredStyle: .alert)
-            let addaction = UIAlertAction(title: "Inavlid", style: .default, handler: nil)
+let Alert = UIAlertController(title: nil, message: "Invalid", preferredStyle: .alert)
+            let addaction = UIAlertAction(title: "OK", style: .default, handler: nil)
             
             Alert.addAction(addaction)
             self.present(Alert,animated: true)

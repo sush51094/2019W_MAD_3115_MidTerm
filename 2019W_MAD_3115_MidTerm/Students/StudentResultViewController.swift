@@ -66,23 +66,34 @@ class StudentResultViewController: UIViewController {
     var grade2 : String?
     
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+     // grade()
+        
+        displaydata()
+        
+    
+    }
+    
     
     func grade()
     {
+       
         if(Int(percentage!) >= 95)
+            
         {
             grade2 = "A+"
             grade1.text = grade2
-            print(grade2)
-            grade1.textColor = UIColor.green
+    
+         grade1.textColor = UIColor.green
        
         
         }
-       else if(Int(percentage!) >= 85)
+      /* else if(Int(percentage!) >= 85)
         {
             grade2 = "A"
             grade1.text = grade2
-            print(grade2)
             grade1.textColor = UIColor.green
             
         }
@@ -91,48 +102,47 @@ class StudentResultViewController: UIViewController {
         {
             grade2 = "B+"
             grade1.text = grade2
-            print(grade2)
             grade1.textColor = UIColor.green
             
         }
         
-      else  if(Int(percentage!) >= 65)
+      else if(Int(percentage!) >= 65)
         {
             grade2 = "B"
-            grade1.text = grade2
-            print(grade2)
+           grade1.text = grade2
             grade1.textColor = UIColor.green
             
         }
         
-      else  if(Int(percentage!) >= 55)
+      else if(Int(percentage!) >= 55)
         {
             grade2 = "c+"
             grade1.text = grade2
-            print(grade2)
             grade1.textColor = UIColor.green
             
         }
         
-      else  if(Int(percentage!) >= 50)
+      else if(Int(percentage!) >= 50)
         {
             grade2 = "c"
-            grade1.text = grade2
-            print(grade2)
+           grade1.text = grade2
             grade1.textColor = UIColor.green
         }
         
         else
         {
             grade2 = "F"
-            grade1.text = grade2
-            print(grade2)
+          grade1.text = grade2
             grade1.textColor = UIColor.red
             
         }
+   */
+     
+     }
         
         
-       func displaydata()
+     */
+    func displaydata()
         
        {
         
@@ -203,8 +213,9 @@ class StudentResultViewController: UIViewController {
             marks5.text = String(e11)
         }
         
+        
+        
         total1 = Float(m1!+m2!+m3!+m4!+m5!)
-        print(total1)
         
         percentage = total1!/5
         
@@ -243,12 +254,10 @@ class StudentResultViewController: UIViewController {
     
     
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+
 
         // Do any additional setup after loading the view.
-    }
+
     
 
     /*
@@ -261,4 +270,4 @@ class StudentResultViewController: UIViewController {
     }
     */
 
-}
+

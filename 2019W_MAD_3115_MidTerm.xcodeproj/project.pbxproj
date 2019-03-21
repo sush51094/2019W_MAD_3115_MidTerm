@@ -19,6 +19,7 @@
 		9BAC0C3A2241C8DC002252C8 /* StudentResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC0C392241C8DC002252C8 /* StudentResultViewController.swift */; };
 		9BF4AB682242F20900E38482 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF4AB672242F20900E38482 /* ViewController.swift */; };
 		9BF4AB6A2242F33100E38482 /* Student_Reading-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BF4AB692242F33100E38482 /* Student_Reading-512.png */; };
+		9BF4AB6C22430B8F00E38482 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF4AB6B22430B8F00E38482 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		9BAC0C392241C8DC002252C8 /* StudentResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentResultViewController.swift; sourceTree = "<group>"; };
 		9BF4AB672242F20900E38482 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9BF4AB692242F33100E38482 /* Student_Reading-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Student_Reading-512.png"; sourceTree = "<group>"; };
+		9BF4AB6B22430B8F00E38482 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			children = (
 				9BAC0C372241C8C7002252C8 /* StudentEntryViewController.swift */,
 				9BAC0C392241C8DC002252C8 /* StudentResultViewController.swift */,
+				9BF4AB6B22430B8F00E38482 /* File.swift */,
 			);
 			path = Students;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 			files = (
 				9BF4AB682242F20900E38482 /* ViewController.swift in Sources */,
 				9BAC0C082241C855002252C8 /* LoginViewController.swift in Sources */,
+				9BF4AB6C22430B8F00E38482 /* File.swift in Sources */,
 				9BAC0C352241C898002252C8 /* Student.swift in Sources */,
 				9BAC0C3A2241C8DC002252C8 /* StudentResultViewController.swift in Sources */,
 				9BAC0C382241C8C7002252C8 /* StudentEntryViewController.swift in Sources */,
